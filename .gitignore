@@ -4,3 +4,4 @@ Owasp.AppSensor.DemoApi/bin/
 Owasp.AppSensor.DemoApi/obj/
 Owasp.AppSensor.WebApi/obj/
 packages/
+*.suo

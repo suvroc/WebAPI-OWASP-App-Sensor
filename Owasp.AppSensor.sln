@@ -1,10 +1,46 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Owasp.AppSensor.Core", "Owasp.AppSensor.Core\Owasp.AppSensor.Core.csproj", "{27B715E1-C14E-491D-828B-EDA7195164F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Owasp.AppSensor.WebApi", "Owasp.AppSensor.WebApi\Owasp.AppSensor.WebApi.csproj", "{FB5BAFC2-5A7E-4EE1-A04A-8AEB0DE4F0E4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{07D1FDE3-BC40-458F-8952-614150DC64FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Owasp.AppSensor.DemoApi", "Tests\Owasp.AppSensor.DemoApi\Owasp.AppSensor.DemoApi.csproj", "{651642B1-9D4C-494D-A45B-A2DF4FF19629}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Owas.AppSensor.DemoTests", "Tests\Owas.AppSensor.DemoTests\Owas.AppSensor.DemoTests.csproj", "{5521CA22-D303-47B2-95F3-1AA47E07B27B}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{27B715E1-C14E-491D-828B-EDA7195164F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27B715E1-C14E-491D-828B-EDA7195164F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27B715E1-C14E-491D-828B-EDA7195164F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27B715E1-C14E-491D-828B-EDA7195164F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB5BAFC2-5A7E-4EE1-A04A-8AEB0DE4F0E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB5BAFC2-5A7E-4EE1-A04A-8AEB0DE4F0E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB5BAFC2-5A7E-4EE1-A04A-8AEB0DE4F0E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB5BAFC2-5A7E-4EE1-A04A-8AEB0DE4F0E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{651642B1-9D4C-494D-A45B-A2DF4FF19629}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{651642B1-9D4C-494D-A45B-A2DF4FF19629}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{651642B1-9D4C-494D-A45B-A2DF4FF19629}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{651642B1-9D4C-494D-A45B-A2DF4FF19629}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5521CA22-D303-47B2-95F3-1AA47E07B27B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5521CA22-D303-47B2-95F3-1AA47E07B27B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5521CA22-D303-47B2-95F3-1AA47E07B27B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5521CA22-D303-47B2-95F3-1AA47E07B27B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{651642B1-9D4C-494D-A45B-A2DF4FF19629} = {07D1FDE3-BC40-458F-8952-614150DC64FA}
+		{5521CA22-D303-47B2-95F3-1AA47E07B27B} = {07D1FDE3-BC40-458F-8952-614150DC64FA}
 	EndGlobalSection
 EndGlobal
