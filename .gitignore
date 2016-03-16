@@ -5,3 +5,11 @@ Owasp.AppSensor.DemoApi/obj/
 Owasp.AppSensor.WebApi/obj/
 packages/
 *.suo
+Tests/Owasp.AppSensor.Demo.Api/bin/
+Tests/Owasp.AppSensor.Demo.Api/obj/Debug/
+Tests/Owasp.AppSensor.Demo.Tests/bin/Debug/
+Tests/Owasp.AppSensor.Demo.Tests/obj/
+Owasp.AppSensor.WebApi/bin/
+Owasp.AppSensor.Core/bin/
+csproj.user
+Tests/Owasp.AppSensor.Demo.Api/Owasp.AppSensor.Demo.Api.csproj.user
