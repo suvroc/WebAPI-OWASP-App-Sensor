@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Owasp.AppSensor.Core.Logging
+namespace Owasp.AppSensor.Core.Logging.Models
 {
     public class LogEvent
     {
@@ -46,5 +42,24 @@ namespace Owasp.AppSensor.Core.Logging
         public string Message { get; set; }
 
         // Optional supporting details
+        public string RequestHeaders { get; set; }
+        public string RequestBody { get; set; }
+        public string ResponseHeaders { get; set; }
+        public string ReposnseBody { get; set; }
+        public string ErrorStackTrace { get; set; }
+        public string ErrorMessage { get; set; }
+        public string OtherSystemResponse { get; set; }
+
+        // Result
+        public string Status { get; set; }
+        public string Reason { get; set; }
+        public int HttpStatusCode { get; set; }
+        public long ResultResponseId { get; set; }
+        public string ResultDescription { get; set; }
+        public string ResultMessage { get; set; }
+
+        // Record integrity
+        public string Hash { get; set; }
+
     }
 }
