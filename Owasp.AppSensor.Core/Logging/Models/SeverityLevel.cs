@@ -1,6 +1,6 @@
 ﻿namespace Owasp.AppSensor.Core.Logging.Models
 {
-    public class SeverityLevel
+    public enum SeverityLevel
     {
     }
 }
