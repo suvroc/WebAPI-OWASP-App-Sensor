@@ -13,3 +13,7 @@ Owasp.AppSensor.WebApi/bin/
 Owasp.AppSensor.Core/bin/
 csproj.user
 Tests/Owasp.AppSensor.Demo.Api/Owasp.AppSensor.Demo.Api.csproj.user
+LogProviders/Owasp.AppSensor.Log.Sql/bin/
+LogProviders/Owasp.AppSensor.Log.Sql/obj/
+Tests/Owasp.AppSensor.Log.Sql.Test/bin/
+Tests/Owasp.AppSensor.Log.Sql.Test/obj/
