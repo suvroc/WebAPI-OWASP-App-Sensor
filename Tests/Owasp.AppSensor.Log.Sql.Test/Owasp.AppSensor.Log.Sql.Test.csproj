@@ -57,6 +57,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EfLogTest.cs" />
     <Compile Include="LogTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -65,6 +66,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\LogProviders\Owasp.AppSensor.Log.EF\Owasp.AppSensor.Log.EF.csproj">
+      <Project>{9cc46b5f-6ff4-4ca8-9f2f-b5650092e68c}</Project>
+      <Name>Owasp.AppSensor.Log.EF</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\LogProviders\Owasp.AppSensor.Log.Sql\Owasp.AppSensor.Log.Sql.csproj">
       <Project>{89f4feea-1ff8-4d32-8018-a39439881018}</Project>
       <Name>Owasp.AppSensor.Log.Sql</Name>

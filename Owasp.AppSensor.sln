@@ -24,6 +24,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Owasp.AppSensor.Log.Sql", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Owasp.AppSensor.Log.Sql.Test", "Tests\Owasp.AppSensor.Log.Sql.Test\Owasp.AppSensor.Log.Sql.Test.csproj", "{CEBDA866-B343-4142-91DA-1141959F07BF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Owasp.AppSensor.Log.EF", "LogProviders\Owasp.AppSensor.Log.EF\Owasp.AppSensor.Log.EF.csproj", "{9CC46B5F-6FF4-4CA8-9F2F-B5650092E68C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -54,6 +56,10 @@ Global
 		{CEBDA866-B343-4142-91DA-1141959F07BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CEBDA866-B343-4142-91DA-1141959F07BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CEBDA866-B343-4142-91DA-1141959F07BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CC46B5F-6FF4-4CA8-9F2F-B5650092E68C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CC46B5F-6FF4-4CA8-9F2F-B5650092E68C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CC46B5F-6FF4-4CA8-9F2F-B5650092E68C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CC46B5F-6FF4-4CA8-9F2F-B5650092E68C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -63,5 +69,6 @@ Global
 		{0DFBFE6F-885B-448E-B464-E7DBFDFD58D8} = {07D1FDE3-BC40-458F-8952-614150DC64FA}
 		{89F4FEEA-1FF8-4D32-8018-A39439881018} = {C44D9434-64D2-4D63-A4BC-BACA7FECA62B}
 		{CEBDA866-B343-4142-91DA-1141959F07BF} = {07D1FDE3-BC40-458F-8952-614150DC64FA}
+		{9CC46B5F-6FF4-4CA8-9F2F-B5650092E68C} = {C44D9434-64D2-4D63-A4BC-BACA7FECA62B}
 	EndGlobalSection
 EndGlobal
