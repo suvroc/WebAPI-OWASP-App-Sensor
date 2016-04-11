@@ -4,6 +4,7 @@ namespace Owasp.AppSensor.Core.Logging.Models
 {
     public class LogEvent
     {
+        public Guid Id { get; set; }
         // When
         public DateTime EventTime { get; set; }
         public DateTime LogTime { get; set; }

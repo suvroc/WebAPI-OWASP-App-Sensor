@@ -4,10 +4,10 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Owasp.AppSensor.Log.Sql.Configuration
 {
-    public class LogEvent
+    public class LogEventData
     {
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
-        public long Id { get; set; }
+        //[DatabaseGenerated(DatabaseGeneratedOption.None)]
+        public Guid Id { get; set; }
         // When
         public DateTime EventTime { get; set; }
         public DateTime LogTime { get; set; }
