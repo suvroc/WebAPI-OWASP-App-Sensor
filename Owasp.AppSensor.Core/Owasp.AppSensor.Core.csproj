@@ -40,6 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Detections\DetectionPoint.cs" />
+    <Compile Include="Detections\Utilities\HttpMethodHelper.cs" />
     <Compile Include="Logging\ILogManager.cs" />
     <Compile Include="Logging\Models\Classification.cs" />
     <Compile Include="Logging\Models\ConfidenceLevel.cs" />
@@ -48,6 +50,9 @@
     <Compile Include="Logging\Models\LogEvent.cs" />
     <Compile Include="Logging\Models\SeverityLevel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Responses\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
