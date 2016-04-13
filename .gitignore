@@ -6,8 +6,8 @@ Owasp.AppSensor.WebApi/obj/
 packages/
 *.suo
 Tests/Owasp.AppSensor.Demo.Api/bin/
-Tests/Owasp.AppSensor.Demo.Api/obj/Debug/
-Tests/Owasp.AppSensor.Demo.Tests/bin/Debug/
+Tests/Owasp.AppSensor.Demo.Api/obj
+Tests/Owasp.AppSensor.Demo.Tests/bin
 Tests/Owasp.AppSensor.Demo.Tests/obj/
 Owasp.AppSensor.WebApi/bin/
 Owasp.AppSensor.Core/bin/
@@ -17,3 +17,5 @@ LogProviders/Owasp.AppSensor.Log.Sql/bin/
 LogProviders/Owasp.AppSensor.Log.Sql/obj/
 Tests/Owasp.AppSensor.Log.Sql.Test/bin/
 Tests/Owasp.AppSensor.Log.Sql.Test/obj/
+/LogProviders/Owasp.AppSensor.Log.EF/bin
+/LogProviders/Owasp.AppSensor.Log.EF/obj

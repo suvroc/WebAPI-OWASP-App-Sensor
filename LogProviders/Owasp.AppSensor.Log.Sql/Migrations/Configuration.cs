@@ -9,7 +9,8 @@ namespace Owasp.AppSensor.Log.Sql.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
+            ContextKey = "Owasp.AppSensor.Log.Sql.Configuration.LogContext";
         }
 
         protected override void Seed(Owasp.AppSensor.Log.Sql.Configuration.LogContext context)
