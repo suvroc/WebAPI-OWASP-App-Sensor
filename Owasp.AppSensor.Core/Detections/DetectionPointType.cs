@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Owasp.AppSensor.Core.Detections
 {
-    public enum DetectionPoint
+    public enum DetectionPointType
     {
         UnexpectedHttpCommand
     }
