@@ -46,12 +46,14 @@
     <Compile Include="Detections\IDetectionPointData.cs" />
     <Compile Include="Detections\InvokeUnsupportedHttpMethod.cs" />
     <Compile Include="Logging\ILogManager.cs" />
+    <Compile Include="Logging\LogStore.cs" />
     <Compile Include="Logging\Models\Classification.cs" />
     <Compile Include="Logging\Models\ConfidenceLevel.cs" />
     <Compile Include="Logging\Models\EventType.cs" />
     <Compile Include="Logging\Models\HttpMethod.cs" />
     <Compile Include="Logging\Models\LogEvent.cs" />
     <Compile Include="Logging\Models\SeverityLevel.cs" />
+    <Compile Include="Logging\ILogStore.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Responses\IEventResponse.cs" />
     <Compile Include="Responses\NoResponse.cs" />
@@ -60,7 +62,6 @@
     <Folder Include="Detections\Utilities\" />
     <Folder Include="Engine\" />
     <Folder Include="Rules\" />
-    <Folder Include="Store\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
