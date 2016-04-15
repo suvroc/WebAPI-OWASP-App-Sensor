@@ -11,6 +11,7 @@ namespace Owasp.AppSensor.Log.Sql.Test
     public class LogTest
     {
         [Test]
+        [Category("RequireDatabase")]
         public void CanInitializeDatabase()
         {
             using (var context = new LogContext())
@@ -21,6 +22,7 @@ namespace Owasp.AppSensor.Log.Sql.Test
         }
 
         [Test]
+        [Category("RequireDatabase")]
         public void ShouldLogInfo()
         {
             Guid id = Guid.NewGuid();

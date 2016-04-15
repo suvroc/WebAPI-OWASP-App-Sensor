@@ -60,6 +60,7 @@
     <Folder Include="Detections\Utilities\" />
     <Folder Include="Engine\" />
     <Folder Include="Rules\" />
+    <Folder Include="Store\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
