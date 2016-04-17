@@ -1,11 +1,12 @@
-﻿using Owasp.AppSensor.Core.Detections;
-using System;
+﻿using System;
 
 namespace Owasp.AppSensor.Core.Logging.Models
 {
-    public class LogEvent
+    public class InternalLogEvent
     {
+        public Guid Id { get; set; }
         // When
+        public DateTime EventTime { get; set; }
         public DateTime LogTime { get; set; }
 
         // Security event
@@ -37,7 +38,7 @@ namespace Owasp.AppSensor.Core.Logging.Models
         // AppSensor detection
         public long SensorId { get; set; }
         public string SensorLocation { get; set; }
-        public DetectionPointType DetectionPoint { get; set; }
+        public long DetectionPointId { get; set; }
         public string Description { get; set; }
         public string Message { get; set; }
 

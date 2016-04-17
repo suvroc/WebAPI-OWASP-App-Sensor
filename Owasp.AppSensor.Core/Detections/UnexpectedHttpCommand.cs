@@ -3,9 +3,9 @@ using System.Collections.Generic;
 
 namespace Owasp.AppSensor.Core.Detections
 {
-    class InvokeUnsupportedHttpMethod : IDetectionPoint
+    class UnexpectedHttpCommand : IDetectionPoint
     {
-        public InvokeUnsupportedHttpMethod()
+        public UnexpectedHttpCommand()
         {
             AllowedHttpMethods = new List<string>();
         }
@@ -23,8 +23,8 @@ namespace Owasp.AppSensor.Core.Detections
             return true;
         }
 
-        public string Name { get { return "Attempt to Invoke Unsupported HTTP Method"; } }
-        public DetectionPointType DetectionPointType { get { return DetectionPointType.UnsupportedHttpMethod; } }
-        public string Code { get { return "RE1"; } }
+        public string Name { get { return "Unexpected HTTP Command"; } }
+        public DetectionPointType DetectionPointType { get { return DetectionPointType.UnexpectedHttpCommand; } }
+        public string Code { get { return "RE2"; } }
     }
 }

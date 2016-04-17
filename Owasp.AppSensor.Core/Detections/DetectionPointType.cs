@@ -8,6 +8,9 @@ namespace Owasp.AppSensor.Core.Detections
 {
     public enum DetectionPointType
     {
-        UnexpectedHttpCommand
+        UnexpectedHttpCommand,
+        UnsupportedHttpMethod,
+        GetWhenExpectingPost,
+        PostWhenExpectingGet
     }
 }

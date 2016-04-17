@@ -4,6 +4,6 @@ namespace Owasp.AppSensor.Core.Logging
 {
     public interface ILogManager
     {
-        void Log(LogEvent logEvent);
+        void Log(InternalLogEvent logEvent);
     }
 }

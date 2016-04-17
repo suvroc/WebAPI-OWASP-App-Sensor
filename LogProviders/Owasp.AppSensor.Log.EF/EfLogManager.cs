@@ -17,17 +17,17 @@ namespace Owasp.AppSensor.Log.EF
             _logContext = logContext;
         }
 
-        public void Log(LogEvent logEvent)
+        public void Log(InternalLogEvent logEvent)
         {
             // TODO: remove obsolete statement
-            var data = Mapper.DynamicMap<LogEvent, LogEventData>(logEvent);
+            var data = Mapper.DynamicMap<InternalLogEvent, LogEventData>(logEvent);
             _logContext.LogEventData.Add(data);
             _logContext.SaveChanges();
         }
 
-        public LogEvent GetLogItem(Guid id)
+        public InternalLogEvent GetLogItem(Guid id)
         {
-            return Mapper.DynamicMap<LogEventData, LogEvent>(_logContext.LogEventData.SingleOrDefault(x => x.Id == id));
+            return Mapper.DynamicMap<LogEventData, InternalLogEvent>(_logContext.LogEventData.SingleOrDefault(x => x.Id == id));
         }
     }
 }

@@ -33,7 +33,7 @@ namespace Owasp.AppSensor.Log.Sql.Test
             {
                 var sqlLogManager = new SqlLogManager(context);
 
-                sqlLogManager.Log(new LogEvent()
+                sqlLogManager.Log(new InternalLogEvent()
                 {
                     Id = id,
                     EventTime = DateTime.Now,

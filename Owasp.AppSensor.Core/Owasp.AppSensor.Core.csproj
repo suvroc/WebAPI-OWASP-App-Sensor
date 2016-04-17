@@ -30,6 +30,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AutoMapper, Version=4.2.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.4.2.1\lib\net45\AutoMapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -44,6 +48,7 @@
     <Compile Include="Detections\DetectionPointType.cs" />
     <Compile Include="Detections\IDetectionPoint.cs" />
     <Compile Include="Detections\IDetectionPointData.cs" />
+    <Compile Include="Detections\UnexpectedHttpCommand.cs" />
     <Compile Include="Detections\InvokeUnsupportedHttpMethod.cs" />
     <Compile Include="Logging\ILogManager.cs" />
     <Compile Include="Logging\LogStore.cs" />
@@ -51,6 +56,7 @@
     <Compile Include="Logging\Models\ConfidenceLevel.cs" />
     <Compile Include="Logging\Models\EventType.cs" />
     <Compile Include="Logging\Models\HttpMethod.cs" />
+    <Compile Include="Logging\Models\InternalLogEvent.cs" />
     <Compile Include="Logging\Models\LogEvent.cs" />
     <Compile Include="Logging\Models\SeverityLevel.cs" />
     <Compile Include="Logging\ILogStore.cs" />
@@ -62,6 +68,9 @@
     <Folder Include="Detections\Utilities\" />
     <Folder Include="Engine\" />
     <Folder Include="Rules\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
