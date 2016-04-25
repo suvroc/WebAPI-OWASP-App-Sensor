@@ -1,12 +1,18 @@
-﻿namespace Owasp.AppSensor.Demo.Api.Filters
+﻿using System.Security.Principal;
+
+namespace Owasp.AppSensor.Demo.Api.Filters
 {
-    public  class BasicAuthenticationIdentity
+    public  class BasicAuthenticationIdentity : IIdentity
     {
-        private string Name
+        public string Name
         {
             get; set;
         }
-        private string Password
+
+        public string AuthenticationType { get; }
+        public bool IsAuthenticated { get; }
+
+        public string Password
         {
             get; set;
         }
