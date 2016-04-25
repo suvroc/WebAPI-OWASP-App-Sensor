@@ -14,6 +14,7 @@ namespace Owasp.AppSensor.Demo.Tests
     public class TestUnexpectedHttpCommand
     {
         [Test]
+        [Category("RequireDatabase")]
         public async Task TestGoodMethod()
         {
             try
